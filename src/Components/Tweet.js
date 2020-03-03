@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 //import PropTypes from 'prop-types';
-var Twit = require('twit');
+//var Twit = require('twit');
 var config = require('../config');
-var T = new Twit(config);
+//var T = new Twit(config);
 
 class Tweet extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentWillMount() {}
 
-  componentDidMount() {}
+  componentDidMount() {
+    console.log('Test');
+  }
 
   componentWillReceiveProps(nextProps) {}
 
@@ -24,7 +22,8 @@ class Tweet extends Component {
   componentWillUnmount() {}
 
   render() {
-    return <div>Test</div>;
+    console.log('Test');
+    return <div>{console.log(config)}</div>;
   }
 }
 
